@@ -14,7 +14,7 @@ public class DeleteData {
 	public void deleteTestData() {
 	
 		RequestSpecification request = RestAssured.given();
-
+//
 		Response response  = request.delete("https://reqres.in/api/users/2");
 		Assert.assertEquals(response.getStatusCode(), 204);
 		
